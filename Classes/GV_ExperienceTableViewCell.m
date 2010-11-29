@@ -33,7 +33,7 @@
 - (void)reloadData {
   [titleLabel setText:[experienceRow objectForKey:@"title"]];
 	[placeLabel setText:[NSString stringWithFormat:@"@%@", [experienceRow objectForKey:@"place"]]];
-  [dateLabel setText:[(NSNumber *)[experienceRow objectForKey:@"year"] stringValue]];
+  [dateLabel setText:[experienceRow objectForKey:@"date"]];
   
   [self titleLabelAlignTop];
   

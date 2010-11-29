@@ -21,11 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
   // ASIHTTP caching
-  //[ASIHTTPRequest setDefaultCache:[ASIDownloadCache sharedCache]];
+  [ASIHTTPRequest setDefaultCache:[ASIDownloadCache sharedCache]];
   
-  #if TARGET_IPHONE_SIMULATOR
-  [window addSubview:tabBarController.view];
-  #else
   // load splash screen
   GC_SplashScreen *splashScreen = [[GC_SplashScreen alloc] initWithNibName:@"SplashScreen" bundle:nil];
   [[splashScreen view] setFrame:CGRectMake(0, 20, 320, 460)];
@@ -33,7 +30,6 @@
   
   [window addSubview:[splashScreen view]];
   [splashScreen release];
-  #endif
   
   [window makeKeyAndVisible];
 

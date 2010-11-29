@@ -46,7 +46,7 @@
 					<object class="IBUILabel" id="865650720">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{180, 58}, {80, 12}}</string>
+						<string key="NSFrame">{{78, 58}, {222, 12}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -69,12 +69,11 @@
 						</object>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<int key="IBUITextAlignment">2</int>
 					</object>
 					<object class="IBUILabel" id="215492457">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{80, 58}, {140, 12}}</string>
+						<string key="NSFrame">{{80, 45}, {140, 12}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -94,7 +93,7 @@
 					<object class="IBUILabel" id="1008750525">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{80, 10}, {190, 38}}</string>
+						<string key="NSFrame">{{78, 10}, {190, 38}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -104,7 +103,7 @@
 						<string key="IBUIText">Title</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica</string>
-							<double key="NSSize">17</double>
+							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<object class="NSColor" key="IBUITextColor">
@@ -276,9 +275,9 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="362355513"/>
-							<reference ref="1008750525"/>
-							<reference ref="215492457"/>
 							<reference ref="865650720"/>
+							<reference ref="215492457"/>
+							<reference ref="1008750525"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -407,15 +406,15 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCoAAAwogAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCoAAAwlQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDcAAAwogAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABByAAAwogAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCtAAAwiwAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCoAAAwjgAAA</bytes>
 					</object>
 				</object>
 			</object>

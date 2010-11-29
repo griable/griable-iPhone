@@ -15,10 +15,9 @@
 int const kNavigationBarBorderHeight = 2;
 
 - (void)drawRect:(CGRect)rect {	
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextSetFillColor(context, CGColorGetComponents([[GU_Constants darkColor] CGColor]));
-	CGContextFillRect(context, rect);
-
+	UIImage *image = [UIImage imageNamed: @"nav-bar.png"];
+  [image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+  
 	CALayer *bottomLineLayer = [CALayer layer];
 	[bottomLineLayer setFrame:CGRectMake(0, self.frame.size.height - kNavigationBarBorderHeight, self.frame.size.width, kNavigationBarBorderHeight)];
 	[bottomLineLayer setBackgroundColor:[[GU_Constants highlightColor] CGColor]];

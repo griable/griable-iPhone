@@ -16,7 +16,7 @@
   NSArray *_data;
 }
 
-- (void)drawHeader;
+- (void)addRefreshButton;
 
 - (void)refreshData;
 - (void)loadData;

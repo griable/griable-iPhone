@@ -25,19 +25,18 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [[self tableView] setSeparatorColor:[GU_Constants highlightColor]];
-  [self drawHeader];
+  [self addRefreshButton];
   
+  [self refreshData];
+}
+
+- (void)addRefreshButton {
   UIButton *refreshButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 26)];
   [refreshButton setImage:[UIImage imageNamed:@"icon-refresh.png"] forState:UIControlStateNormal];
   [refreshButton addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventTouchUpInside];
-  UIView *view = [[UIView alloc] initWithFrame:[refreshButton frame]];
-  [view addSubview:refreshButton];
   
-  UIBarButtonItem *refreshButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+  UIBarButtonItem *refreshButtonItem = [[UIBarButtonItem alloc] initWithCustomView:refreshButton];
   [[self navigationItem] setRightBarButtonItem:refreshButtonItem];
-  
-  [self refreshData];
 }
 
 // download data
@@ -45,7 +44,6 @@
   [self loadData];
   [self showDownloadModalView];
 }
-
 
 // download data
 - (void)loadData {
@@ -121,7 +119,6 @@
   return 1;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   return [_data count];
 }
@@ -150,39 +147,12 @@
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)drawHeader {
-  // container
-  UIView *headerView = [[[UIView alloc] init] autorelease];
-  [headerView setFrame:CGRectMake(0, 0, 320, 80)];
-  [headerView setBackgroundColor:[[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"table-view-header-background.png"]] autorelease]];
-  
-  // text
-  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 60)];
-  [label setFont:[UIFont systemFontOfSize:20.0f]];
-  [label setTextColor:[GU_Constants highlightColor]];
-  [label setBackgroundColor:[UIColor clearColor]];
-  [label setText:@"EDUCATION"];
-  
-  [headerView addSubview:label];
-  [label release];
-  
-  // separator
-  UIView *separator = [[UIView alloc] initWithFrame:CGRectMake(0, 78, 320, 2)];
-  [separator setBackgroundColor:[GU_Constants highlightColor]];
-  
-  [headerView addSubview:separator];
-  [separator release];
-  
-  [[self tableView] setTableHeaderView:headerView];
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   GC_EducationDetailScreen *educationDetailScreen = [[GC_EducationDetailScreen alloc] initWithNibName:@"EducationDetailScreen" bundle:nil];
   [[self navigationController] pushViewController:educationDetailScreen animated:YES];
   [educationDetailScreen setEducationRow:[_data objectAtIndex:indexPath.row]];
   [educationDetailScreen release];
 }
-
 
 #pragma mark -
 #pragma mark Memory management
@@ -193,7 +163,6 @@
 
 - (void)viewDidUnload {
 }
-
 
 - (void)dealloc {
   [modalViewController release];

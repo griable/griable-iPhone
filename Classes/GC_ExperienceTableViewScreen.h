@@ -16,8 +16,6 @@
   NSArray *_data;
 }
 
-- (void)drawHeader;
-
 - (void)refreshData;
 - (void)loadData;
 - (void)showDownloadModalView;

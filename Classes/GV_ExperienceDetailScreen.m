@@ -40,7 +40,7 @@ const int kExperienceSkillMarginRight = 10;
     [GU_Utils alignTopLabel:titleLabel];
     
     [placeLabel setText: [NSString stringWithFormat:@"@ %@", [value objectForKey:@"place"]]];
-    [yearLabel setText: [[value objectForKey:@"year"] stringValue]];
+    [yearLabel setText: [value objectForKey:@"date"]];
     
     [self displaySkills];
   }
