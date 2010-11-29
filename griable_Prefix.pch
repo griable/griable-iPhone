@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'griable' target in the 'griable' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "GU_Constants.h"
+#endif
