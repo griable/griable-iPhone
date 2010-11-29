@@ -73,34 +73,14 @@
 #pragma mark GV_SplashScreenDelegate
 
 - (void)animationsDidComplete {
-  // Add the tab bar controller's view to the window and display.
   [window addSubview:tabBarController.view];
 }
-
-#pragma mark -
-#pragma mark UITabBarControllerDelegate methods
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed {
-}
-*/
 
 
 #pragma mark -
 #pragma mark Memory management
 
-- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    /*
-     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
-     */
-}
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application { }
 
 
 - (void)dealloc {

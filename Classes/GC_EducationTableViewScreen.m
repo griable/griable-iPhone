@@ -30,6 +30,9 @@
   [self refreshData];
 }
 
+#pragma mark -
+#pragma mark refresh
+
 - (void)addRefreshButton {
   UIButton *refreshButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 24, 26)];
   [refreshButton setImage:[UIImage imageNamed:@"icon-refresh.png"] forState:UIControlStateNormal];

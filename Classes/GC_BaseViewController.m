@@ -8,7 +8,6 @@
 
 #import "GC_BaseViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import "GU_Constants.h"
 
 @implementation UINavigationBar (UINavigationBarFlat)
 

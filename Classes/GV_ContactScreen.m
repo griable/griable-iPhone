@@ -7,7 +7,7 @@
 //
 
 #import "GV_ContactScreen.h"
-
+#import "GC_ContactScreen.h"
 
 @implementation GV_ContactScreen
 
@@ -15,7 +15,7 @@
 
 - (IBAction)callCTouch { [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://+33603555012"]]; }
 - (IBAction)mailTouch {
-  [(id)controller sendMail];
+  [(GC_ContactScreen *)controller sendMail];
 }
 
 - (void)dealloc {
