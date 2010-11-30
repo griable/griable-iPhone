@@ -12,7 +12,6 @@
 
 @required
 -(void)animationsDidComplete;
-
 @end
 
 @interface GC_SplashScreen : UIViewController {

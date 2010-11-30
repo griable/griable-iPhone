@@ -67,7 +67,7 @@ const int kSlpashScreenLogoPaddingTop  = 40;
 - (void)triggerBackgroundAnimations {
   CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
   [animationGroup setDuration:1.5f];
-  [animationGroup setAnimations:[NSArray arrayWithObjects:[self backgroundColorAnimation], nil]];
+  [animationGroup setAnimations:[NSArray arrayWithObjects:[self backgroundOpacityAnimation], nil]];
   [animationGroup setDelegate:self];
   [[self layer] addAnimation:animationGroup forKey:@"group"];
 }
@@ -115,12 +115,12 @@ const int kSlpashScreenLogoPaddingTop  = 40;
 
 #pragma mark Background Animation
 
-- (CABasicAnimation*) backgroundColorAnimation {
-  CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
+- (CABasicAnimation*) backgroundOpacityAnimation {
+  CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
   [animation setBeginTime:1.0f];
   [animation setDuration:0.5f];
-  [animation setFromValue:(id)[[GU_Constants darkColor] CGColor]];
-  [animation setToValue:(id)[[GU_Constants lightColor] CGColor]];
+  [animation setFromValue:[NSNumber numberWithFloat:1.0f]];
+  [animation setToValue:[NSNumber numberWithFloat:0.0f]];
   
   return animation;
 }

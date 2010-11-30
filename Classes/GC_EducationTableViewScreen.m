@@ -67,6 +67,7 @@
 - (void)showDownloadModalView {
   griableAppDelegate *delegate = (griableAppDelegate *)[UIApplication sharedApplication].delegate;
   [delegate.window addSubview:[[self modalViewController] view]];
+  [[[self modalViewController] view] setFrame:CGRectMake(0, 20, 320, 460)];
   [[self modalViewController] setValue:@"downloading" forKeyPath:@"status"];
 }
 

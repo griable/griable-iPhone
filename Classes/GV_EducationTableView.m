@@ -26,7 +26,7 @@
   [label setFont:[UIFont systemFontOfSize:20.0f]];
   [label setTextColor:[GU_Constants highlightColor]];
   [label setBackgroundColor:[UIColor clearColor]];
-  [label setText:@"EDUCATION"];
+  [label setText:[NSLocalizedString(@"EducationKey", @"") uppercaseString]];
   
   [headerView addSubview:label];
   [label release];

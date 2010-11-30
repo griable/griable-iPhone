@@ -131,7 +131,7 @@
 								<float key="IBUIMinimumFontSize">10</float>
 							</object>
 						</object>
-						<string key="NSFrame">{{20, 0}, {270, 90}}</string>
+						<string key="NSFrame">{{20, 115}, {270, 90}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="991214743"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -139,7 +139,7 @@
 					<object class="IBUIView" id="1072859934">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{10, 220}, {290, 15}}</string>
+						<string key="NSFrame">{{10, 222.5}, {290, 15}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="991214743"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -173,7 +173,7 @@
 								<int key="IBUIStyle">2</int>
 							</object>
 						</object>
-						<string key="NSFrame">{{10, 100}, {100, 100}}</string>
+						<string key="NSFrame">{{10, 10}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -321,7 +321,7 @@
 						<int key="objectID">21</int>
 						<reference key="object" ref="471005436"/>
 						<reference key="parent" ref="636029263"/>
-						<string key="objectName">Titre</string>
+						<string key="objectName">Title</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>

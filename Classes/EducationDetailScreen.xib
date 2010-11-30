@@ -131,7 +131,7 @@
 								<float key="IBUIMinimumFontSize">10</float>
 							</object>
 						</object>
-						<string key="NSFrame">{{20, 0}, {270, 90}}</string>
+						<string key="NSFrame">{{20, 115}, {270, 90}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="991214743"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -139,7 +139,7 @@
 					<object class="IBUIView" id="1072859934">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{10, 220}, {290, 15}}</string>
+						<string key="NSFrame">{{10, 223}, {290, 15}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="991214743"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -173,7 +173,7 @@
 								<int key="IBUIStyle">2</int>
 							</object>
 						</object>
-						<string key="NSFrame">{{10, 100}, {100, 100}}</string>
+						<string key="NSFrame">{{10, 10}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -304,9 +304,9 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="531036869"/>
-							<reference ref="471005436"/>
 							<reference ref="58146636"/>
 							<reference ref="565723992"/>
+							<reference ref="471005436"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 						<string key="objectName">Title container</string>
@@ -379,6 +379,7 @@
 					<string>18.IBPluginDependency</string>
 					<string>18.IBViewBoundsToFrameTransform</string>
 					<string>21.IBPluginDependency</string>
+					<string>21.IBViewBoundsToFrameTransform</string>
 					<string>23.IBPluginDependency</string>
 					<string>23.IBViewBoundsToFrameTransform</string>
 					<string>24.IBPluginDependency</string>
@@ -397,7 +398,7 @@
 					<string>GC_EducationDetailScreen</string>
 					<string>UIResponder</string>
 					<string>GV_EducationDetailScreen</string>
-					<string>{{611, 83}, {320, 480}}</string>
+					<string>{{365, 102}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -408,6 +409,9 @@
 						<bytes key="NSTransformStruct">AQAAAABBIAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABBcAAAwjgAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABBIAAAwowAAA</bytes>

@@ -29,6 +29,6 @@
 
 - (CABasicAnimation*) scaleAnimation;
 - (CABasicAnimation*) positionAnimation;
-- (CABasicAnimation*) backgroundColorAnimation;
+- (CABasicAnimation*) backgroundOpacityAnimation;
 
 @end

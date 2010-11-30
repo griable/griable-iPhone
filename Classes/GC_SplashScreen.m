@@ -13,22 +13,29 @@
 
 @synthesize delegate;
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
+#pragma mark -
+#pragma mark Dispatch events
 
 - (void)dispatchAnimationCompletion {
   [[self delegate] animationsDidComplete];
 }
 
+#pragma mark -
+#pragma mark Views Lifecycle
+
 - (void)viewDidUnload {
   [super viewDidUnload];
 }
 
+#pragma mark -
+#pragma mark Memory management
+
+- (void)didReceiveMemoryWarning {
+  [super didReceiveMemoryWarning];
+}
 
 - (void)dealloc {
     [super dealloc];
 }
-
 
 @end
